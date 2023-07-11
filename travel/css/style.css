@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1,7    ;
+
+}
+
+.header{
+    height:95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+
+h1,h2,h3{
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar a {
+    padding-bottom: 0.3rem;
+    color: white;
+}
+
+.navbar a:hover{
+    border-bottom:1px solid white ;
+    color: rgb(8, 103, 129);
+}
+
+.logo{
+    color: white;
+}
+
+.bg-dark{
+    background-color: #263238;
+    font-size: 1.6rem;
+}
+
+.nav-item a {
+    
+    text-decoration: none;
+}
+
+
+ .navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+
+
+ .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+    
+}
+
+
+     .navbar .nav-item{
+    display: inline-block;
+    padding: 1.6rem;
+}
+
+
+.header .navbar .nav-item a {
+    text-decoration: none;
+    font-size:1.6rem;
+    letter-spacing: 0.15em;
+    /* border-bottom: 1px solid white; */
+}
+
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header-content{
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+    
+.header-content h1 {
+    color: white;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.header-content p {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+.btn-primary{
+    background-color: #fff;
+    color:rgb(253, 13, 13) ;
+    border-radius: 100px;
+}
+
+.btn:hover{
+    background-color:#f7e9e7;
+    /* color: white; */
+
+}
+
+
+/* showcase section stylibg */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0px;
+}
+
+.row{
+    height: 350px;
+    /* border: 2px solid red; */
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1{
+    margin-bottom: 10rem ;
+}
+.row1 .img-box, .row2 .text-box{
+
+    float: left;
+    width: 50%;
+
+}
+.row1 .img-box, .row2 .img-box{
+
+    float: left;
+    width: 50%;
+
+}
+
+.row .img-box{
+    /* border: 2px solid green; */
+    height: 100%;
+    padding: 1rem;
+    object-fit: cover;
+    
+
+}
+.row .text-box{
+    /* border: 2px solid rgb(0, 41, 128); */
+    height: 100%;
+    padding: 4rem;
+    /* margin-left: 1rem; */
+}
+
+.row .img-box img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.row .text-box h2{
+  font-size: 3rem;
+  /* word-spacing: 2\rem; */
+  /* padding: 1rem; */
+}
+.row .text-box p{
+    font-size: 1.6rem;
+    /* padding: 1rem; */
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    word-spacing: 0.5rem;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+.btn-secondry{
+    background-color: #fff;
+    color:rgb(253, 13, 13) ;
+    border-radius: 100px;
+    border: 2px solid red;
+}
+
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.feautures{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    /* border: 2px solid green; */
+}
+
+.box{
+    width: 33.333%;
+    float: left;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    /* font-size: 1.6rem; */
+    text-align: center;
+    box-shadow: 5px 5px 20px 0px #00000038;
+
+
+}
+
+.box-wrapper::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+.box p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+}
+
+.box h2{
+    font-size: 2.5rem;
+}
+
+.box1, .box3 {
+    background-color:#263238 ;
+    color: white;
+}
+
+.box2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: white;
+}
+
+.social-media{
+    /* width: 50%; */
+    height: 100px   ;
+    background-color: #263238;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    /* margin-top: 1rem; */
+    padding: 1rem;
+}
+.social-media i {
+  margin-right: 1.5rem;
+  /* color: #ee4758; */
+  cursor: pointer;
+}
+.social-media p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    /* color: #ee4758; */
+
+}
+
+.social-media i:hover{
+    color:#ee4758;
+
+}
+
+
+.large{
+    font-size: 3rem;
+    font-weight: 400;
+
+
+}
+.about{
+    padding: 5rem 0;
+}
+
+.about .large::after {
+       content: "";
+       display: block;
+       border: 3px solid red;
+       width: 100%;
+}
+
+.about p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    
+}
+
+
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li{
+    list-style-type: none;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: red;
+    padding-right: 1rem;
+
+}
+
+.count{
+    /* border: 2px solid red; */
+    /* width: 25%; */
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.count-item{
+    width: 25%;
+    float: left;
+
+}
+
+.count-item p{
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+}
+
+.count::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cta-banner{
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    padding: 2rem;
+    box-shadow: 5px 5px 10px #00000057;
+       
+}
+.btn-ca{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+.cta-banner .cta-banner-left{
+    float: left;
+    color: white;
+    /* padding-left:1rem ;s */
+    font-weight: bold;
+    
+    
+}
+.cta-banner .cta-banner-right {
+    float: right;
+    padding-right:1rem ;
+}
+
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ################# contct stylig ########### */
+
+.contact-form{
+
+    padding: 5rem 0;
+    font-size: 2rem;
+    background-color: #f7f7f7;
+    /* width: 49%; */
+    
+}
+
+.from-wrapeer { 
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    /* width: 49%; */
+}
+.company-address{
+    /* border: 2px dotted red; */
+    width: 48%;
+    float: left;
+     /* margin-bottom: 2rem; */
+     /* padding: 1rem; */
+     background-color: #fff;
+}
+.form{
+    float: right;
+     /* border: 2px solid green;     */
+     width: 48%;
+     background-color: #fff;
+     padding: 2rem;
+
+}
+
+.from-wrapeer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contaier{
+    border: 2px solid red;
+}
+
+.company-address .style{
+    padding: 1rem;
+    color: red;
+}
+
+.company-address p {
+    padding: 1.3rem;
+}
+
+.company-address img {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.form h2::after{
+    content: "";
+    display: block;
+    border: 2px solid red;
+    margin-bottom: 2rem;
+    /* margin-top: 2rem; */
+}
+.form p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form input{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.form textarea {
+    display: block;
+    margin-bottom: 1rem ;
+    font-size: 1.7rem;
+
+}
+.form .red {
+    color: red;
+}
+
+.form .button{
+    margin-top: 3rem;
+    width: 50%;    
+    margin-left: 13rem;
+    background-color: red;
+    color: white;
+    
+
+
+}
+
+
+/* #################### MEDIAQUERY STYLING################## */
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .nav-item, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .header-content h1{
+        display: none;
+    }
+     .row{
+        float: none;
+        height: auto;
+    
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feautures .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feautures .box 
+    .feautures .box{
+        margin-top: 7rem;
+    }
+
+     .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .from-wrapeer .company-address {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+    .from-wrapeer .form  {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width:501px) and (max-width:768px){
+    html{
+        font-size: 8px;
+
+    }
+    .navbar .nav-item, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .header-content h1{
+        display: none;
+    }
+     .row{
+        float: none;
+        height: auto;
+    
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feautures .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feautures .box 
+    .feautures .box{
+        margin-top: 7rem;
+    }
+
+     .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .from-wrapeer .company-address {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+    .from-wrapeer .form  {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media (min-width:78px) and (max-width:1200px){
+    html{
+        font-size: 56.25%;
+    }
+    .row .text-box h2{
+        font-size: 2.5rem;
+    }
+    .row p {
+        font: 1rem;
+    }
+}
